@@ -24,11 +24,11 @@ class Page1 extends Component {
     this.setState({
         bb: sha256('中文'),
         list: [
-          { name: '积利金1个月定期', rate: '0.48' },
-          { name: '积利金3个月定期', rate: '0.59' },
-          { name: '积利金2个月定期', rate: '0.48' },
-          { name: '积利金4个月定期', rate: '0.59' },
-          { name: '积利金6个月定期', rate: '0.59' },
+          { name: 'item1', rate: '0.48' },
+          { name: 'item3', rate: '0.59' },
+          { name: 'item2', rate: '0.48' },
+          { name: 'item4', rate: '0.59' },
+          { name: 'item6', rate: '0.59' },
         ]
       }
     )
@@ -37,13 +37,13 @@ class Page1 extends Component {
   add = () => {
     this.setState({
         list: [
-          { name: '积利金1个月定期', rate: '0.48' },
-          { name: '积利金3个月定期', rate: '0.59' },
-          { name: '积利金2个月定期', rate: '0.48' },
-          { name: '积利金4个月定期', rate: '0.59' },
-          { name: '积利金6个月定期', rate: '0.59' },
-          { name: '积利金8个月定期', rate: '0.59' },
-          { name: '积利金12个月定期', rate: '0.59' },
+          { name: 'item1', rate: '0.48' },
+          { name: 'item3', rate: '0.59' },
+          { name: 'item2', rate: '0.48' },
+          { name: 'item4', rate: '0.59' },
+          { name: 'item6', rate: '0.59' },
+          { name: 'item8', rate: '0.59' },
+          { name: 'item12', rate: '0.59' },
         ]
       }
     )
