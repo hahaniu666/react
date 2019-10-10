@@ -1,0 +1,12 @@
+@import './theme.scss';
+@import "./public";
+
+// *{
+//     touch-action: none;
+// }
+.clearfix::after{
+  content: '';
+  display: block;
+  overflow: hidden;
+  clear: both;
+}

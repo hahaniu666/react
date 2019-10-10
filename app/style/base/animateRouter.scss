@@ -1,0 +1,131 @@
+/**
+ * 转场动画样式
+ * @Author:
+ * @Date: 2019/09/17
+ * @Last Modified by:
+ * @Last Modified time: 2019/09/17
+ */
+
+// 配合transitionGroup 需要引入
+.router-wrapper {
+  overflow: hidden;
+  height: 100%;
+  > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #f5f5f9;
+    overflow: hidden;
+  }
+}
+
+/**
+ * 右侧进入，右侧退出
+ */
+
+// 入场动画
+.forward-from-right-enter {
+  z-index: 200;
+  transform: translateX(100%);
+}
+.forward-from-right-enter-active {
+  z-index: 200;
+  transform: translateX(0);
+  transition: all 500ms;
+}
+// 入场结束
+.forward-from-right-enter-done{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+  background: #fff;
+}
+.forward-from-right-exit {
+  z-index: 1;
+}
+.forward-from-right-exit-active {
+  z-index: 1;
+  transition: all 500ms;
+}
+
+// 退场动画
+.back-to-right-enter {
+  z-index: 1;
+}
+.back-to-right-enter-active {
+  z-index: 1;
+  transform: translateX(0);
+  transition: all 500ms;
+}
+.back-to-right-exit {
+  z-index: 200;
+  transform: translateX(0);
+}
+.back-to-right-exit-active {
+  z-index: 200;
+  transform: translate(100%);
+  transition: all 500ms;
+}
+
+
+
+/**
+ * 下方进入，下方退出
+ */
+.forward-from-bottom-enter {
+  z-index: 200;
+  /*opacity: 0;*/
+  transform: translateY(100%);
+}
+
+.forward-from-bottom-enter-active {
+  z-index: 200;
+  /*opacity: 1;*/
+  transform: translateY(0);
+  transition: all 500ms;
+}
+
+// 入场结束
+.forward-from-right-enter-done{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+  background: #fff;
+}
+
+.forward-from-bottom-exit {
+  z-index: 1;
+}
+
+.forward-from-bottom-exit-active {
+  z-index: 1;
+  transition: all 500ms;
+}
+
+.back-to-bottom-enter {
+  z-index: 1;
+}
+
+.back-to-bottom-enter-active {
+  z-index: 1;
+  transition: all 500ms;
+}
+
+.back-to-bottom-exit {
+  z-index: 200;
+  transform: translateY(0);
+}
+
+.back-to-bottom-exit-active {
+  z-index: 200;
+  transform: translateY(100%);
+  transition: all 500ms;
+}

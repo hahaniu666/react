@@ -1,0 +1,16 @@
+@import 'app/style/base/default.scss';
+
+.Swiper{
+    display: flex;
+    display: -webkit-flex;
+    position: fixed;
+    bottom: 0;
+    height: 49px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+    &:after {
+        @include borderTop($border-color);
+    }
+}
+

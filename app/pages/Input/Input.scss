@@ -1,0 +1,36 @@
+.Input {
+  background-color: #018ef5;
+  .content {
+    position: absolute;
+    padding: 0 0 50px 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    top: 45px;
+
+    .pad {
+      padding: 30px;
+      background: #fff;
+
+      box-sizing: border-box;
+
+      div {
+        margin-bottom: 10px;
+
+        input {
+          display: block;
+          width: 100%;
+          font-size: 14px;
+          padding: 9px 6px 9px 40px;
+          height: 40px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+
+}

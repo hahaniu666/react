@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import "./public.scss";
+
+/********** Main theme colors **********/
+
+$white: #fff !default;
+$body-bg-color: #f1f1f1;;
+//header-footer
+$nav-color: #343434;
+$bar-color: #f9f6f6;
+$icon-bg-color: #3c3c3c;
+//main text color
+$text-primary-color:#464646;
+//control-color
+$control-primary-color:#ed7045;
+$control-border: #c5c5c5;
+$btn-primary-border:#9c3d1d;
+$btn-box-bg: #fff;
+$main-border-color: #dcdcdc;
+$segmented-control: #ed7045;
+$error-border: #f00;
+//按钮字体颜色
+$btn-text-color: #fff;
+//input控件disabled/readonly时的背景颜色
+$disabled-color:#f5f5f5;
+//牌价颜色
+$price-bg-up: #f75353;
+$price-bg-down: #48bb58;
+$price-bg-limit: #fff;
+//时间，牌价描述，以及除货币名称以外的字体颜色和tab背景色
+$price-primary-color: #404040;
+//货币组合颜色
+$price-currency-color: #333;
+//牌价title标题的背景色
+$price-title-bg: #f5f5f5;
+//表单里面主要字体颜色以及select颜色
+$form-primary-color: #333;
+$btn-confirm-bg: #00A4EA;
+$btn-cancel-bg: #F65A5A;
+
+//header 被选中颜色
+$tab-selected:#00A4EA;
+
+$main-color: #364760;
+$high-light: #fadd56;
+$icon-color: #b1bfca;
+$main-title: #DAEAF6;
+$fontColor: #ccdce8;
+$font-color: #fff;
+$background-color: #F6F6F6;
+$border-color: #DADFEA;
+$unable-font-color: #616f88;
+$price-up-color: #f8422d;
+$price-down-color: #00c15e;
+
+/********** Main theme size **********/
+
+$header-height:44px;
+//控件按钮，选项卡，select中的高度和字体大小
+$control-height: 36px;
+$segmented-control-height:45px;
+$control-height-small:size(60);
+$control-font:size(28);
+$control-font-small:size(24);

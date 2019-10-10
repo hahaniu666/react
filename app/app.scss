@@ -1,0 +1,77 @@
+@import 'app/style/base/default.scss';
+@import 'app/style/base/animateRouter.scss';
+// 全局公共样式写在此处
+// 关于设置z-index的建议，一般如下
+// 1-遮罩层，用于遮蔽页面元素防止用户操作
+// 2-弹出层，如弹窗，下拉组件等用户可操作元素
+// 3-顶层，用于不允许遮挡的元素
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  //禁止拷贝/复制行为
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input,
+select {
+  -webkit-user-select: auto;
+  user-select: auto;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration-line: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+html, body, #root {
+  background: $body-bg-color;
+  height: 100%;
+  width: 100%;
+  font-size: pxToRem(24);
+  overflow-y: hidden;
+}
+
+// 字体 和 svg图标
+.icon {
+  width: 2em;
+  height: 2em;
+  vertical-align: -0.5em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+//公共样式
+h2 {
+  font-size: 0.4rem;
+  padding-left: 10px;
+  background: #eaeaea;
+}
+
+ul {
+  li {
+    height: pxToRem(23);
+    line-height: pxToRem(23);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.eg-wrapper {
+  padding: 10px;
+  font-size: pxToRem(16);
+}

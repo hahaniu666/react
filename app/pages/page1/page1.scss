@@ -1,0 +1,25 @@
+
+@import 'app/style/base/default.scss';
+
+#home{
+  //height: 100vh;
+  overflow-y: scroll;
+  ul{
+    padding: 10px;
+  }
+  li{
+    margin-bottom: 15px;
+    a{
+        font-size: pxToRem(14);
+    }
+  }
+  .content{
+    position: absolute;
+    left: 0;
+    top: 45px;
+    bottom: 50px;
+    right: 0;
+    margin: auto;
+    word-break: break-all;
+  }
+}
